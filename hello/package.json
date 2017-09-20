@@ -1,0 +1,30 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "Hello World Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "grunt test",
+    "start": "node server.js"
+  },
+  "author": "Victor",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-available-tasks": "^0.6.3",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
+  },
+  "dependencies": {
+    "upper-case": "^1.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorskl/node-tute.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorskl/node-tute/issues"
+  },
+  "homepage": "https://github.com/victorskl/node-tute#readme"
+}
