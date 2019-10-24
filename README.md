@@ -140,3 +140,18 @@ npm start
 
 popd
 ```
+
+### Node.js Express app using WebStorm
+
+- [File > New > Project... > Node.js Express App](https://blog.jetbrains.com/webstorm/2014/01/getting-started-with-node-js-in-webstorm/)
+
+```
+pushd 03-webstorm
+
+npm install
+npm audit
+npm start
+(CTRL+C)
+
+popd
+```
