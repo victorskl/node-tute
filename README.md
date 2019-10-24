@@ -32,7 +32,7 @@ REF:
 
 ### Getting started
 
-- Installing Node.js [using NVM](https://github.com/nvm-sh/nvm). This should usually install [NPM package management](https://docs.npmjs.com/about-npm/) tooling as part of [the Node.js development stack](https://stackoverflow.com/questions/41675848/what-is-the-difference-between-node-js-runtime-and-npm-package-manager-options-w/41676076) distribution. So, make sure, you have `node` and `npm` commands available in your terminal.
+- Installing Node.js [using NVM](https://github.com/nvm-sh/nvm). This should usually install [NPM package management](https://docs.npmjs.com/about-npm/) tooling as part of [the Node.js development stack](https://stackoverflow.com/questions/41675848/what-is-the-difference-between-node-js-runtime-and-npm-package-manager-options-w/41676076) distribution. So, make sure, you have `node` and `npm` commands available in your shell.
 
 #### Hello from server-side javascript!
 
@@ -120,3 +120,23 @@ Reading:
 - [What is the purpose of Node.js module.exports and how do you use it?](https://stackoverflow.com/questions/5311334/what-is-the-purpose-of-node-js-module-exports-and-how-do-you-use-it)
 - [In Node.js, how do I "include" functions from my other files?](https://stackoverflow.com/questions/5797852/in-node-js-how-do-i-include-functions-from-my-other-files)
 - https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js
+
+### Express
+
+- Using [Express](https://en.wikipedia.org/wiki/Express.js) as app server framework for building backend web or API application and, integration test with [Mocha](https://mochajs.org) and [supertest](https://github.com/visionmedia/supertest).
+
+```
+pushd 02-express
+
+npm init
+npm install express --save
+npm install mocha --save-dev
+npm install supertest --save-dev
+npm audit
+npm test
+node_modules/.bin/mocha --exit
+npm start
+(CTRL+C)
+
+popd
+```
