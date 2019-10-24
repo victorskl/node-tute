@@ -1,8 +1,8 @@
 # node-tute
 
-So little time, so many thing to learn!
+Node.js tutorials
 
-### Node based Dev Stack
+### Node.js based development stack
 
 There are 3 key things for the modern [Javascript](https://en.wikipedia.org/wiki/JavaScript) development stack that based around [Node.js](http://nodejs.org): ***Package Manager***, ***Task Runner*** and ***Module Bundler***.
 
@@ -30,70 +30,72 @@ REF:
 - https://github.com/grab/front-end-guide
 
 
-### Installing the Node
+### Getting started
+
+- Installing Node.js [using NVM](https://github.com/nvm-sh/nvm). This should usually install [NPM package management](https://docs.npmjs.com/about-npm/) tooling as part of [the Node.js development stack](https://stackoverflow.com/questions/41675848/what-is-the-difference-between-node-js-runtime-and-npm-package-manager-options-w/41676076) distribution. So, make sure, you have `node` and `npm` commands available in your terminal.
+
+#### Hello from server-side javascript!
 
 ```
-brew search node
-brew install node
-node -v
-npm -v
-```
-
-#### Downgrading the Node
-
-```
-brew install node@6
-brew unlink node
-brew link node@6
-npm install -g npm@5.3.0
-node -v
-npm -v
-```
-
-
-### Node itself
-
-```
-cd node-tute
-cd hello/src
+pushd 00-hello
 node hello.js
-cd ..
-npm start (or node server.js)
-(ctrl+c to halt)
-open -a Safari http://localhost:8888
-(from another terminal tab)
+node server.js
+(CTRL+C)
+popd
 ```
 
-REF:
+Reading:
 
-- https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js
 - https://www.nodebeginner.org
 
+### Introduction to NPM package dependency and Grunt tasks
 
-### NPM
+#### tl;dr
+
+```
+pushd 01-npm-grunt
+
+npm init
+npm install grunt --save-dev
+npm install upper-case --save
+npm audit
+node_modules/.bin/grunt --help
+node_modules/.bin/grunt --tasks
+node_modules/.bin/grunt test
+node_modules/.bin/grunt minify
+npm run minify
+npm run test
+npm run start
+(CTRL+C)
+
+popd
+```
+
+#### npm
 
 ```
 npm -v
-npm install -g grunt-cli
-(install module globally)
+
+(create package.json file)
 npm help init
 npm init
-(create package.json file)
+
 npm help install
-npm install upper-case
+
+(install grunt-cli module globally)
+npm install -g grunt-cli
+
 (this also add upper-case module into package.json dependencies)
-node uc-server.js
-open -a Safari http://localhost:8080
+npm install upper-case
+
+npm help list
+npm list
+npm -g list
 ```
 
-NOTE: It is all about [`package.json`](https://docs.npmjs.com/files/package.json). TL;DR though. But at least, read about [devdependencies](https://docs.npmjs.com/files/package.json#devdependencies).
+NOTE: It is all about [`package.json`](https://docs.npmjs.com/files/package.json). TL;DR though. But at least, read about [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies).
 
-REF:
-
-- https://www.w3schools.com/nodejs/nodejs_npm.asp
-
-
-### Grunt
+#### grunt
 
 Requires two files:
 
@@ -109,7 +111,12 @@ grunt test
 grunt minify
 ```
 
-REF:
+Reading:
 
+- https://www.w3schools.com/nodejs/nodejs_npm.asp
 - https://gruntjs.com/getting-started
-
+- https://gruntjs.com/sample-gruntfile
+- https://www.tutorialsteacher.com/nodejs/nodejs-local-modules
+- [What is the purpose of Node.js module.exports and how do you use it?](https://stackoverflow.com/questions/5311334/what-is-the-purpose-of-node-js-module-exports-and-how-do-you-use-it)
+- [In Node.js, how do I "include" functions from my other files?](https://stackoverflow.com/questions/5797852/in-node-js-how-do-i-include-functions-from-my-other-files)
+- https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js
