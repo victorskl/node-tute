@@ -1,5 +1,5 @@
 {
-  "name": "02-express",
+  "name": "01-simple",
   "version": "0.0.1",
   "description": "Hello",
   "main": "server.js",
