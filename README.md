@@ -95,6 +95,17 @@ npm -g list
 
 NOTE: It is all about [`package.json`](https://docs.npmjs.com/files/package.json). TL;DR though. But at least, read about [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies).
 
+
+#### npx
+
+> The npx command is just a convenient way of running a NPM module without installing it globally.
+
+- https://www.npmjs.com/package/npx
+- https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner
+- https://stackoverflow.com/questions/50605219/difference-between-npx-and-npm
+- https://www.google.com/search?q=npx
+
+
 #### grunt
 
 Requires two files:
