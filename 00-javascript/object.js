@@ -113,10 +113,4 @@ console.log(keys);
 console.log(typeof keys);
 
 
-console.log('\n');
-
-
-// How To Use Object Methods in JavaScript
-// https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript
-
-//todo
+// see also json.js
