@@ -62,3 +62,40 @@ console.log(column_headers.map(h => h.toUpperCase()));
 
 const rows = results.map(r => Object.values(r));
 console.log(rows);
+
+console.log();
+
+// kv_data structure is very Map alike key value pair but an object in JavaScript! This typical JSON structure for representing a single object.
+const kv_data = { key1: 'value1', key2: 'value2' };
+
+try {
+    kv_data.forEach((k,v) => console.log(k, v)); // Nop! throws TypeError: kv_data.forEach is not a function. kv_data is not a Map or array, it is an object!
+} catch (e) {
+    // pass
+}
+
+try {
+    for (let [k, v] of kv_data) { // Nop! throws TypeError: kv_data is not iterable
+        console.log("Key: " + k);
+        console.log("Value: " + v);
+    }
+} catch (e) {
+    // pass
+}
+
+// basically, it needs to iterates over object's keys and get value by key
+
+for (let k in kv_data) {
+    console.log(k, kv_data[k]);
+}
+
+Object.keys(kv_data).forEach(function(k) { // using Object.keys()
+    let v = kv_data[k];
+    console.log(k, v);
+});
+
+for (let [k, v] of Object.entries(kv_data)) { // using Object.entries()
+    console.log(`${k}: ${v}`);
+}
+
+// https://stackoverflow.com/questions/33946567/iterate-over-values-of-object

@@ -26,3 +26,7 @@ function greeter(person: Person) {
 let user = new Student("Jane", "M.", "User");
 
 document.body.textContent = greeter(user);
+
+//todo
+// json-object-mapper
+// https://www.npmjs.com/package/json-object-mapper
