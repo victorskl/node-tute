@@ -1,7 +1,7 @@
 // Understanding Data Types in JavaScript
 // https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript
 
-// Dynamic Typing
+//--- Dynamic Typing
 // JavaScript has dynamic data types, meaning that type checking is done at runtime rather than compile time.
 // Python's data types are also dynamically typed. With dynamically typed languages, a variable of the same name
 // can be used to hold different data types.
@@ -29,8 +29,9 @@ f();
 let t;
 console.log(typeof t); // t is undefined
 
+console.log();
 
-// Numbers
+//--- Numbers
 
 // there is no separate designation for integers and floating-point numbers
 let num1 = 93;
@@ -71,13 +72,32 @@ let q = 37;
 let r = p + q;  // r will be NaN
 console.log(r);
 
+console.log();
+
+//--- Strings
+// A string is a sequence of one or more characters (letters, numbers, symbols).
+
+let singleQuotes = 'This is a string in single quotes.';
+console.log(singleQuotes);
+
+let doubleQuotes = "This is a string in double quotes.";
+console.log(doubleQuotes);
 
 console.log();
 
-// Boolean
-// Strings
+// See string.js for more.
 
-// Arrays
+//--- Boolean
+
+let myBool = 5 > 8; // false
+console.log(myBool);
+
+let thisIsTrue = true;
+console.log(thisIsTrue, typeof thisIsTrue);
+
+console.log();
+
+//--- Arrays
 
 let fish = ["shark", "cuttlefish", "clownfish", "eel"];
 console.log(fish);
@@ -86,18 +106,20 @@ console.log(fish.toString());
 
 console.log();
 
+// See array.js for more.
 
-// Objects
+//--- Objects
 
-// The object literal syntax is made up of name:value pairs separated by colons with curly braces on either side { }. See object.js for more.
+// The object literal syntax is made up of name:value pairs separated by colons with curly braces on either side { }.
 let sammy = {firstName:"Sammy", lastName:"Shark", color:"blue", location:"ocean"};
 console.log(sammy);
 console.log(typeof sammy);
 
 console.log();
 
+// See object.js for more.
 
-// Working with Multiple Data Types
+//--- Working with Multiple Data Types
 
 let o = "Ocean" + 1 + 1; // concat
 console.log(o);
