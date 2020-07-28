@@ -25,9 +25,11 @@ Module Bundler
 
 REF:
 
+- https://www.infoq.com/articles/state-of-javascript-2016/
 - https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f
 - https://stackoverflow.com/questions/35062852/npm-vs-bower-vs-browserify-vs-gulp-vs-grunt-vs-webpack
 - https://github.com/grab/front-end-guide
+- https://www.reactiflux.com/learning/
 
 
 ### Getting started

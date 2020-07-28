@@ -74,6 +74,18 @@ console.log(r);
 
 console.log();
 
+
+//--- Boolean
+
+let myBool = 5 > 8; // false
+console.log(myBool);
+
+let thisIsTrue = true;
+console.log(thisIsTrue, typeof thisIsTrue);
+
+console.log();
+
+
 //--- Strings
 // A string is a sequence of one or more characters (letters, numbers, symbols).
 
@@ -87,15 +99,6 @@ console.log();
 
 // See string.js for more.
 
-//--- Boolean
-
-let myBool = 5 > 8; // false
-console.log(myBool);
-
-let thisIsTrue = true;
-console.log(thisIsTrue, typeof thisIsTrue);
-
-console.log();
 
 //--- Arrays
 
@@ -108,6 +111,7 @@ console.log();
 
 // See array.js for more.
 
+
 //--- Objects
 
 // The object literal syntax is made up of name:value pairs separated by colons with curly braces on either side { }.
@@ -118,6 +122,7 @@ console.log(typeof sammy);
 console.log();
 
 // See object.js for more.
+
 
 //--- Working with Multiple Data Types
 
