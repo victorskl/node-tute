@@ -4,6 +4,7 @@ _How to keep up Package Dependencies in NodeJS project_
 
 1. List outdated packages using `outdated` command
 2. Bump version and run `install` command
+3. See [Issue with NPM outdated packages as transitive dependencies](https://github.com/victorskl/node-tute/tree/master/01-npm-grunt/deps_issue) -- why you should use Yarn...
 
 ## npm
 

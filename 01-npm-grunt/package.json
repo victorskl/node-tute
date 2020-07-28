@@ -18,7 +18,8 @@
     "grunt-contrib-uglify": "^5.0.0"
   },
   "dependencies": {
-    "upper-case": "^2.0.1"
+    "upper-case": "^2.0.1",
+    "diff": "^4.0.2"
   },
   "repository": {
     "type": "git",
