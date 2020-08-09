@@ -21,6 +21,7 @@ Task Runner
 Module Bundler
 
 - webpack
+- rollup
 - (and the rest) SystemJS, RequireJS, Browserify
 
 REF:

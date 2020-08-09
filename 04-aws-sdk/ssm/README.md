@@ -37,5 +37,15 @@ node index.js delete
 - https://flaviocopes.com/how-to-enable-es-modules-nodejs/
 - https://blog.logrocket.com/es-modules-in-node-today/
 
-### REF
+### More
+
 - [Keep Your Secrets Safe with AWS Systems Manager Parameter Store and Node](https://www.codebyamir.com/blog/keep-your-secrets-safe-with-aws-systems-manager-parameter-store-and-nodejs)
+- https://stackoverflow.com/questions/52859297/retrieve-aws-ssm-parameter-in-bulk
+- https://github.com/aws/aws-sdk-js/issues/2245
+- https://www.npmjs.com/package/aws-param-store
+
+
+Integrate the AWS SDK for JavaScript into a React App
+- https://aws.amazon.com/blogs/mobile/integrate-the-aws-sdk-for-javascript-into-a-react-app/
+
+A tad old article :point_up: for working with now obsolete MobileHub (become Amplify Console). But it is still interesting for using `aws-sdk` in React frontend for consuming some other AWS services that [are not in Amplify](https://github.com/aws-amplify/amplify-js#notice). 

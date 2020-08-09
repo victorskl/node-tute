@@ -1,9 +1,15 @@
-# 00-include
+# 00-module
 
-What equivalent of the following:
+Q. What equivalent of the following:
 - `#include <stdio.h>`
 - `import java.util.*`
 - `from python import __version__`
+
+A. [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) -- [PDF](es_modules_a_cartoon_deep_dive.pdf)
+
+- https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm
+- https://dev.to/bennypowers/you-should-be-using-esm-kn3
+- https://blog.risingstack.com/node-js-at-scale-module-system-commonjs-require/
 
 ### ES5: module.exports ... require(...)
 

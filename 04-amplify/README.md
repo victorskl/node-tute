@@ -13,6 +13,12 @@ Center around AWS Amplify
 - Console
     - a Git-based workflow for hosting fullstack serverless web apps with continuous deployment
 
+> History time! Read why :point_up: in: https://aws.amazon.com/blogs/mobile/aws-mobile-gets-amplified/
+
+> The heart of AWS Amplify remains the open source **client** framework...
+
+> AWS Amplify is a JavaScript library for **frontend** and mobile developers building cloud-enabled applications... https://github.com/aws-amplify/amplify-js
+
 > TODO go through [Getting started](https://docs.amplify.aws/start/q/integration/js) tute to grasp whole idea. GraphQL is interesting...
 
 ## Development aspect
