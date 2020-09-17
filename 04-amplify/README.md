@@ -1,11 +1,13 @@
 # AWS Amplify
 
 Center around AWS Amplify
+
+(blurbs)
 - https://github.com/aws-amplify
 - https://docs.amplify.aws/
 - https://aws.amazon.com/amplify/framework/
 
-## tl;dr
+## TL;DR
 
 - JS Libraries 
 - UI Component
@@ -13,7 +15,7 @@ Center around AWS Amplify
 - Console
     - a Git-based workflow for hosting fullstack serverless web apps with continuous deployment
 
-> History time! Read why :point_up: in: https://aws.amazon.com/blogs/mobile/aws-mobile-gets-amplified/
+> History time! Read why ☝️ in: https://aws.amazon.com/blogs/mobile/aws-mobile-gets-amplified/ -- [PDF](AWS_Mobile_gets_Amplified.pdf)
 
 > The heart of AWS Amplify remains the open source **client** framework...
 
@@ -33,12 +35,9 @@ Center around AWS Amplify
 npm install aws-amplify --save
 ```
 
-
 ### Amplify UI Component 
 
 - https://docs.amplify.aws/ui
-
----
 
 ## Deployment aspect
 
@@ -80,7 +79,7 @@ amplify
 TODO to myself: may be, I will experiment this stack migration to Amplify workflow, sometime later!
 
 ### Amplify Console
-- (Didn't look at it closely), but it is just fronting :point_up: CLI counterpart and design-fit CI/CD workflow setup for what might end up serverless backend stack for your Amplify App. Sort of Lightsail, but for your own developed App stack, conceptually, you-know-what-i-mean :smile_cat:.
+- (Didn't look at it closely), but it is just fronting ☝️ CLI counterpart and design-fit CI/CD workflow setup for what might end up serverless backend stack for your Amplify App. Sort of Lightsail, but for your own developed App stack, conceptually, you-know-what-i-mean :smile_cat:.
 - https://aws.amazon.com/amplify/console/
 - https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
 
