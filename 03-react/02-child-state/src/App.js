@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import SuperHero from './SuperHero';
+import Parent from './Parent';
+import CtxProvider from "./CtxProvider";
+import CtxChild1 from "./CtxChild1";
+import CtxChild2 from "./CtxChild2";
 
-/*
-How to change the state of a child component from its parent in React
-https://www.freecodecamp.org/news/react-changing-state-of-child-component-from-parent-8ab547436271/
-*/
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -14,9 +14,17 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className={App}>
+            <div>
                 <SuperHero ref={this.superHeroElement} />
                 <button onClick={this.handleClick}>Show real name</button>
+                <hr />
+                <Parent />
+                <hr />
+                <h2>React Context API</h2>
+                <CtxProvider>
+                    <CtxChild1 />
+                    <CtxChild2 />
+                </CtxProvider>
             </div>
         );
     }
@@ -27,7 +35,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-//TODO
-// https://towardsdatascience.com/passing-data-between-react-components-parent-children-siblings-a64f89e24ecf
-// https://medium.com/a-layman/controlling-state-between-two-react-child-components-72a326c745a4

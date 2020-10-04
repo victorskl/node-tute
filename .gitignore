@@ -1,5 +1,6 @@
 local.txt
 local*.txt
+local/
 
 ## Node.js
 
