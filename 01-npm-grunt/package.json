@@ -11,7 +11,7 @@
   "author": "Victor",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.2.1",
+    "grunt": "^1.3.0",
     "grunt-available-tasks": "^0.6.3",
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-nodeunit": "^2.1.0",
