@@ -13,3 +13,13 @@ yarn create react-app 00-boiler
 
 npx create-react-app 00-plate --use-npm
 ```
+
+### 00-eject
+
+```
+yarn create react-app 00-eject
+cd 00-eject
+yarn test
+yarn start
+yarn eject
+```

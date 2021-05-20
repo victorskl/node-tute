@@ -26,6 +26,7 @@ Module Bundler
 
 REF:
 
+- https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
 - https://www.infoq.com/articles/state-of-javascript-2016/
 - https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f
 - https://stackoverflow.com/questions/35062852/npm-vs-bower-vs-browserify-vs-gulp-vs-grunt-vs-webpack
