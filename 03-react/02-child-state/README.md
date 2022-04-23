@@ -3,10 +3,8 @@
 _aka How React share state between components -- parent-child, peer-components and how do  state traversal in component tree_ 
 
 ```
-npm install
-npm test
-npm run build
-npm start
+yarn install
+yarn start
 ```
 
 #### Pattern: Parent Command Child
@@ -14,7 +12,7 @@ npm start
 - [How to change the state of a child component from its parent in React](https://www.freecodecamp.org/news/react-changing-state-of-child-component-from-parent-8ab547436271/)
 
 ```
-App
+Landing
     >>> SuperHero
 ```
 
