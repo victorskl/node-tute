@@ -18,10 +18,11 @@ aws sso login --profile lab
 export AWS_PROFILE=lab
 
 node --version
-v12.18.2
+v14.19.1
 
 node index.js save
 node index.js get
+aws ssm get-parameter --name '/test/id'
 node index.js delete
 
 node index.js save secured=false
