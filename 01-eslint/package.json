@@ -7,16 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint index.ts",
     "lint:create": "eslint --init",
-    "build": "tsc --target es5 index.ts",
+    "build": "tsc --target es2021 index.ts",
     "clean": "rm index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.7.1",
-    "@typescript-eslint/parser": "^3.7.1",
-    "eslint": "^7.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.14.0",
     "eslint-config-google": "^0.14.0",
-    "typescript": "^3.9.7"
+    "typescript": "^4.6.3"
   }
 }

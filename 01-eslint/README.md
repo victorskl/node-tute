@@ -14,7 +14,7 @@ npx eslint index.ts --fix
 npm run lint
 npx tsc --init
 npx tsc index.ts
-npx tsc --target es5 index.ts
+npx tsc --target es2021 index.ts
 node index.js
 npm run clean
 npm run build
