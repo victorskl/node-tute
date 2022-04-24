@@ -25,7 +25,7 @@ popd
 
 ### Node.js Express app using WebStorm
 
-- [File > New > Project... > Node.js Express App](https://blog.jetbrains.com/webstorm/2014/01/getting-started-with-node-js-in-webstorm/)
+- [File > New > Project... > Express](https://blog.jetbrains.com/webstorm/2014/01/getting-started-with-node-js-in-webstorm/)
 
 ```
 pushd 02-webstorm
@@ -69,10 +69,4 @@ express --git --no-view
 
    run the app:
      $ DEBUG=03-generator:* npm start
-
-npm init
-npm install
-npm audit
-DEBUG=03-generator:* npm start
-(CTRL+C)
 ```
