@@ -65,9 +65,9 @@ Requires two files:
 
 ```
 npm install grunt-available-tasks --save-dev
-grunt
-grunt test
-grunt minify
+npx grunt
+npx grunt test
+npx grunt minify
 ```
 
 Reading:
