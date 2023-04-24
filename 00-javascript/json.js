@@ -83,11 +83,13 @@ try {
     // pass
 }
 
-// basically, it needs to iterates over object's keys and get value by key
+// basically, it needs to iterate over object's keys and get value by key
 
 for (let k in kv_data) {
     console.log(k, kv_data[k]);
 }
+
+// https://stackoverflow.com/questions/33946567/iterate-over-values-of-object
 
 Object.keys(kv_data).forEach(function(k) { // using Object.keys()
     let v = kv_data[k];
@@ -98,4 +100,17 @@ for (let [k, v] of Object.entries(kv_data)) { // using Object.entries()
     console.log(`${k}: ${v}`);
 }
 
-// https://stackoverflow.com/questions/33946567/iterate-over-values-of-object
+//  https://stackabuse.com/reading-and-writing-json-files-with-node-js/
+
+const fs = require('fs');
+let rawData = fs.readFileSync('js.json');
+console.log(rawData);
+let cars = JSON.parse(rawData.toString());
+console.log(cars);
+console.log(typeof cars);
+
+const jsonData = require('./js.json');
+console.log(jsonData);
+// every valid JSON file is valid JavaScript Object
+console.log(jsonData.meta);
+console.log(typeof jsonData.meta);

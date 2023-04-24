@@ -1,5 +1,6 @@
 // Understanding Data Types in JavaScript
 // https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values
 
 //--- Dynamic Typing
 // JavaScript has dynamic data types, meaning that type checking is done at runtime rather than compile time.
