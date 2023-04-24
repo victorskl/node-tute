@@ -3,17 +3,19 @@
 https://www.typescriptlang.org
 
 ```
-npm install -g typescript
-which tsc
-
 npm init
-npm install typescript --save-dev
-node_modules/typescript/bin/tsc --version
-npx tsc --version
 
-tsc --help
-tsc --init
-tsc greeter.ts
+npm install typescript --save-dev
+(OR)
+yarn add typescript --dev
+
+node_modules/typescript/bin/tsc --version
+
+npx tsc --version
+npx tsc --help
+npx tsc --init
+npx tsc greeter.ts
+npx tsc
 ```
 
 - https://stackoverflow.com/questions/38030078/how-to-install-and-run-typescript-locally-in-npm/41446584

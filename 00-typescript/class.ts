@@ -14,19 +14,16 @@ class Student {
 
 interface Person {   // contrast to Java: interface should not constitute to hold object instance mutable state, rather interfacing methods and/or final constants?
     firstName: string;
+    middleInitial: string;
     lastName: string;
 }
 
 // @ts-ignore
 function greeter(person: Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
+    return "Hello, " + person.firstName + " " + person.middleInitial + " " + person.lastName;
 }
 
 // @ts-ignore
 let user = new Student("Jane", "M.", "User");
 
 document.body.textContent = greeter(user);
-
-//todo
-// json-object-mapper
-// https://www.npmjs.com/package/json-object-mapper
