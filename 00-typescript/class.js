@@ -1,3 +1,4 @@
+"use strict";
 // Classes #
 // TypeScript supports new features in JavaScript, like support for class-based object-oriented programming.
 // Here we're going to create a Student class with a constructor and a few public fields.
@@ -15,7 +16,7 @@ var Student = /** @class */ (function () {
 }());
 // @ts-ignore
 function greeter(person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
+    return "Hello, " + person.firstName + " " + person.middleInitial + " " + person.lastName;
 }
 // @ts-ignore
 var user = new Student("Jane", "M.", "User");
