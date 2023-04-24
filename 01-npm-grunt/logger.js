@@ -10,4 +10,4 @@ let logger = {
   }
 };
 
-export default logger; // ES6
+module.exports = logger; // ES5
