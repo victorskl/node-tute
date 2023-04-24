@@ -1,6 +1,6 @@
-import {upperCase} from "upper-case";
-import * as http from "http";
-import logger from "./logger.js";
+const {upperCase} = require("upper-case");
+const http = require("http");
+let logger = require("./logger"); // ES5
 
 let app = function (req, res) {
   logger.info("Hello World"); // server-side code, for example

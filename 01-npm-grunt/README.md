@@ -6,13 +6,12 @@
 npm init
 npm install grunt --save-dev
 npm install upper-case --save
+
 npm audit
-node_modules/.bin/grunt --help
-node_modules/.bin/grunt --tasks
-node_modules/.bin/grunt test
-node_modules/.bin/grunt minify
-npm run minify
+npm outdated
+
 npm run test
+npm run minify
 npm run start
 (CTRL+C)
 ```
