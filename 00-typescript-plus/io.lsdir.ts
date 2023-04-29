@@ -1,9 +1,9 @@
 import * as fs from 'fs';
 
-let myDirList: string[] = fs.readdirSync('../00-typescript/');
+const myDirList: string[] = fs.readdirSync('../00-typescript/');
 console.log(myDirList);
 
-myDirList.forEach(fileName => {
+myDirList.forEach((fileName) => {
   console.log(fileName);
 });
 

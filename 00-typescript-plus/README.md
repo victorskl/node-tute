@@ -1,6 +1,6 @@
 # 00-typescript-plus
 
-Basic forms usage of some utilities written either in TypeScript or, JavaScript through [DefinitelyTyped](https://github.com/DefinitelyTyped) 
+Basic forms usage of some utilities written either in TypeScript or, JavaScript through [DefinitelyTyped](https://github.com/DefinitelyTyped)
 
 - Quick start
 
