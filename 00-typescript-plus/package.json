@@ -1,0 +1,19 @@
+{
+  "name": "00-typescript-plus",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "tsc --build --clean",
+    "build": "tsc",
+    "main": "node main"
+  },
+  "devDependencies": {
+    "@types/mime": "^3.0.1",
+    "@types/node": "^18.16.2",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "mime": "^3.0.0"
+  }
+}

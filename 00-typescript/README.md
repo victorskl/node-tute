@@ -1,7 +1,17 @@
 # 00-typescript
 
+> Note: focus here are just basic and syntax of TypeScript lang itself. 
+> For more, real world usages with Node.js runtime & its eco-system, see [00-typescript-plus](../00-typescript-plus)  
+
 https://www.typescriptlang.org
 
+- Quick start
+```
+yarn build
+node primitive
+```
+
+- Boostrap TypeScript Project
 ```
 npm init
 

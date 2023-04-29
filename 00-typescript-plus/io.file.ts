@@ -1,19 +1,6 @@
 // npx tsc
 // node io.file
 
-// --- Determining file path
-
-import * as path from "path";
-
-console.log(__dirname); // point to absolute path, from current dir of src
-
-let absPath = path.join(__dirname, '');
-console.log(absPath);
-
-let myPath = path.join(__dirname, '../00-javascript');
-console.log(myPath);
-
-
 // --- Loading JSON file using Nodejs CommonJS style
 
 const requiredCars = require('../00-javascript/js.json');  // ES5
@@ -69,7 +56,7 @@ console.log(typeof iCars);
 
 import * as fs from 'fs';  // @types/node
 
-const fileBuffer = fs.readFileSync(myPath + '/js.json');
+const fileBuffer = fs.readFileSync('../00-javascript/js.json');
 const carJsonParsed = JSON.parse(fileBuffer.toString('utf-8'));
 console.log(carJsonParsed);
 console.log(typeof carJsonParsed);

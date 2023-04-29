@@ -1,6 +1,8 @@
 // tsc primitive.ts
 // node primitive
 
+import {printDash} from "./utils";
+
 let myStr: string = "My String";
 console.log(myStr);
 
@@ -22,8 +24,56 @@ console.log(fruits);
 let fruitsGenerics: Array<string> = ['Apple', 'Orange', 'Banana'];
 console.log(fruitsGenerics);
 
+printDash();
+
+
+// --- Type-ing
+
+
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases
+type Fruit = "Apple" | "Orange" | "Banana";  // Type aliasing using `type` keyword
+
+const myBanana: string = "Banana";
+
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions
+let myFruit: Fruit = myBanana as Fruit;  // Type assertion (or Casting)
+console.log(myFruit);
+console.log(typeof myFruit);
+
+printDash();
+
+// --- Interface and Type-ing
+
+
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases
+type Point = {
+  x: number,
+  y: number,
+}
+const pt: Point = {x: 100, y: 100};
+console.log(pt)
+
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces
+interface IPoint {
+  x: number,
+  y: number,
+  z: number,
+}
+
+const iPnt: IPoint = {x: 100, y: 100, z: 1000}
+console.log(iPnt);
+
+type ID = Point | IPoint;
+
+const _id_: ID = {x: 100, y: 100}
+console.log(typeof _id_);
+console.log(_id_)
+
+printDash();
+
 
 // --- Record Type
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type
 
 
 let aRecordOldStyle: { [name: string]: string | number } = {
@@ -33,6 +83,7 @@ let aRecordOldStyle: { [name: string]: string | number } = {
 console.log(typeof aRecordOldStyle);
 console.log(aRecordOldStyle);
 
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types
 let aRecord: Record<string, string | number> = {               // Using pipe char `string | number` <<< Union Type
   name: 'NSW',
   code: 2000,
@@ -54,38 +105,16 @@ let myRecord: Record<string, string[]> = {};
 myRecord['workflow'] = ['test', 'demo'];
 console.log(myRecord)
 
-
-// --- interface, type
-
-
-type Point = {
-  x: number,
-  y: number,
-}
-const pt: Point = {x: 100, y: 100};
-console.log(pt)
-
-interface IPoint {
-  x: number,
-  y: number,
-  z: number,
-}
-const iPnt: IPoint = {x: 100, y: 100, z: 1000}
-console.log(iPnt);
-
-type ID = Point | IPoint;                                      // type alias + union type
-const _id_ = {x: 100, y: 100}
-console.log(typeof _id_);
-console.log(_id_)
+printDash();
 
 
 // --- Functional
 
 
 const states = [
-  { name: 'Victoria', code: 'VIC' },
-  { name: 'New South Wales', code: 'NSW' },
-  { name: 'Tasmania', code: 'TAS' },
+  {name: 'Victoria', code: 'VIC'},
+  {name: 'New South Wales', code: 'NSW'},
+  {name: 'Tasmania', code: 'TAS'},
 ];
 const stateCodes = states.map(s => s.code);
 console.log(stateCodes);
@@ -96,3 +125,16 @@ console.log(vic);
 states.forEach(s => {
   console.log(s.name);
 });
+
+
+// --- Looping
+
+printDash();
+for (let idx in states) {
+  console.log(idx, states[idx]);
+}
+
+printDash();
+for (const [k, v] of Object.entries(states)) {  // required compiler target => ES2017
+  console.log(k, v);
+}
