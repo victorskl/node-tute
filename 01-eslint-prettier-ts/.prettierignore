@@ -1,0 +1,20 @@
+# See https://prettier.io/docs/en/ignore.html
+
+node_modules/
+build/
+dist/
+coverage/
+.local/
+
+tsconfig.json
+
+.pre-commit-config.yaml
+buildspec.yml
+docker-compose.yml
+
+*.html
+
+*.sh
+Makefile
+
+README.md
