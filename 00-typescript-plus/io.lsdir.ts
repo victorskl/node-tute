@@ -7,5 +7,9 @@ myDirList.forEach((fileName) => {
   console.log(fileName);
 });
 
+// See
+// io.fg.ts
+// io.glob.ts
+
 // More
 // https://stackoverflow.com/questions/2727167/how-do-you-get-a-list-of-the-names-of-all-files-present-in-a-directory-in-node-j
