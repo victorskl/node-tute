@@ -12,16 +12,16 @@
 // yarn build
 // node mime
 
-import mime from "mime";
+import mime from 'mime';
 
-const htmlReport: string = "path/to/some_report.html"
+const htmlReport = 'path/to/some_report.html';
 console.log(mime.getType(htmlReport));
 
-const pngFile: string = "some.blue.png";
+const pngFile = 'some.blue.png';
 console.log(mime.getType(pngFile));
 
-const vcfGz: string = "my_variant.vcf.gz"
+const vcfGz = 'my_variant.vcf.gz';
 console.log(mime.getType(vcfGz));
 
-const bam: string = "my_alignment.bam"
+const bam = 'my_alignment.bam';
 console.log(mime.getType(bam));
