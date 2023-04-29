@@ -6,27 +6,27 @@ class Person {
   private readonly _lastName: string;
 
   /**
-     *
-     * @param {string} firstName
-     * @param {string} lastName
-     */
+   *
+   * @param {string} firstName
+   * @param {string} lastName
+   */
   constructor(firstName: string, lastName: string) {
     this._firstName = firstName;
     this._lastName = lastName;
   }
 
   /**
-     * get full name
-     * @return {string} getFullName
-     */
+   * get full name
+   * @return {string} getFullName
+   */
   getFullName() {
     return this._firstName + ' ' + this._lastName;
   }
 
   /**
-     * greet with firstName
-     * @return {string} greet
-     */
+   * greet with firstName
+   * @return {string} greet
+   */
   greet() {
     return 'Hello ' + this._firstName;
   }
