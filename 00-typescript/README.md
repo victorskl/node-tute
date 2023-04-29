@@ -1,7 +1,8 @@
 # 00-typescript
 
-> Note: focus here are just basic and syntax of TypeScript lang itself. 
-> For more, real world usages with Node.js runtime & its eco-system, see [00-typescript-plus](../00-typescript-plus)  
+> Note: 
+> * Focus here is just TypeScript basic and syntax of the language itself. 
+> * For more, real world usages within Node.js runtime & its eco-system, see [02-typescript-plus](../02-typescript-plus)  
 
 https://www.typescriptlang.org
 

@@ -8,10 +8,12 @@ Basic forms usage of some utilities written either in TypeScript or, JavaScript 
 yarn build
 node main
 node mime
-node io.lsdir
 node io.file
 node io.path
 node sub/dirname
+node io.lsdir
+node io.glob
+node io.fg
 ```
 
 - Initialise TypeScript Project
