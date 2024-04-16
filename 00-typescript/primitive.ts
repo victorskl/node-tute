@@ -24,6 +24,21 @@ console.log(fruits);
 let fruitsGenerics: Array<string> = ['Apple', 'Orange', 'Banana'];
 console.log(fruitsGenerics);
 
+let jsonAsAnObject = {
+  'id': 123456,
+  'name': 'John Doe'
+}
+console.log(typeof jsonAsAnObject);
+console.log(jsonAsAnObject);
+
+let objectSpreadOperator = {
+  ...jsonAsAnObject,
+  'name': '__OVERRIDE NAME__',
+  'description': 'object spread operator',
+}
+console.log(typeof objectSpreadOperator);
+console.log(objectSpreadOperator);
+
 printDash();
 
 
@@ -83,6 +98,7 @@ let aRecordOldStyle: { [name: string]: string | number } = {
 console.log(typeof aRecordOldStyle);
 console.log(aRecordOldStyle);
 
+// --- Union Type
 // https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types
 let aRecord: Record<string, string | number> = {               // Using pipe char `string | number` <<< Union Type
   name: 'NSW',
@@ -107,6 +123,32 @@ console.log(myRecord)
 
 printDash();
 
+
+// --- Intersection Type
+// https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types
+// https://stackoverflow.com/questions/38317625/what-does-the-ampersand-mean-in-a-typescript-type-definition
+
+interface Colorful {
+  color: string;
+}
+interface Circle {
+  radius: number;
+}
+
+type ColorfulCircle = Colorful & Circle;
+
+function draw(circle: Colorful & Circle) {
+  console.log(`Color was ${circle.color}`);
+  console.log(`Radius was ${circle.radius}`);
+}
+
+// okay
+draw({ color: "blue", radius: 42 });
+
+// oops
+// draw({ color: "red", raidus: 42 });
+
+printDash();
 
 // --- Functional
 

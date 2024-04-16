@@ -6,19 +6,10 @@
 
 https://www.typescriptlang.org
 
-- Quick start
-```
-yarn build
-node primitive
-```
-
 - Boostrap TypeScript Project
 ```
 npm init
-
 npm install typescript --save-dev
-(OR)
-yarn add typescript --dev
 
 node_modules/typescript/bin/tsc --version
 
@@ -27,6 +18,8 @@ npx tsc --help
 npx tsc --init
 npx tsc greeter.ts
 npx tsc
+
+node primitive
 ```
 
 - https://stackoverflow.com/questions/38030078/how-to-install-and-run-typescript-locally-in-npm/41446584
