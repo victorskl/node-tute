@@ -28,9 +28,6 @@ touch .prettierrc.json && webstorm .prettierrc.json
 
 # create prettier ignore -- https://prettier.io/docs/en/ignore.html
 touch .prettierignore && webstorm .prettierignore 
-
-# create eslint ignore
-touch .eslintignore && webstorm .eslintignore
 ```
 
 ```bash
@@ -57,6 +54,7 @@ yarn clean
 - https://eslint.org/docs/latest/use/configure/language-options
 
 ### TypeScript ESLint
+
 - https://typescript-eslint.io/
 - https://typescript-eslint.io/getting-started/
 
