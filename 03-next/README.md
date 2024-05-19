@@ -50,5 +50,5 @@ yarn start
 ```
 
 ```
-curl -s http://localhost:3000/api/hello
+curl -s http://localhost:3000/api/hello | jq
 ```
