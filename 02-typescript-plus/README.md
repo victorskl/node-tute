@@ -5,7 +5,10 @@ Basic forms usage of some utilities written either in TypeScript or, JavaScript 
 - Quick start
 
 ```
+yarn install
+yarn clean
 yarn build
+
 node main
 node mime
 node io.file
