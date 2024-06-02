@@ -29,13 +29,15 @@ popd
 
 ```
 pushd 02-webstorm
-npm init
 npm install
 npm audit
 npm start
 (CTRL+C)
 popd
 ```
+
+- http://localhost:3000/
+- http://localhost:3000/users/
 
 ### Express Generator
 
@@ -48,6 +50,7 @@ mkdir 03-generator
 pushd 03-generator
 express --version
 express --git --no-view
+destination is not empty, continue? [y/N] y
 
    create : public/
    create : public/javascripts/
@@ -70,3 +73,6 @@ express --git --no-view
    run the app:
      $ DEBUG=03-generator:* npm start
 ```
+
+- http://localhost:3000/
+- http://localhost:3000/users/
