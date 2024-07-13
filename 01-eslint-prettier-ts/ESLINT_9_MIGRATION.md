@@ -57,3 +57,11 @@ yarn add --dev eslint @eslint/js @types/eslint__js typescript typescript-eslint
 ```
 yarn remove eslint-plugin-prettier
 ```
+
+## React
+
+- https://github.com/jsx-eslint/eslint-plugin-react?tab=readme-ov-file#configuration-new-eslintconfigjs
+
+```
+yarn add --dev eslint-plugin-react
+```
