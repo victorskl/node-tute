@@ -4,7 +4,7 @@ https://vitejs.dev
 
 ```
 mkdir
-cd 01-vite
+cd 03-vite
 ```
 
 - Install Create Vite App `create-vite` or `cva` globally
@@ -20,7 +20,7 @@ yarn create vite
     ✔ Select a framework: › React
     ✔ Select a variant: › TypeScript + SWC
     
-    Scaffolding project in ~/Projects/github/node-tute/01-vite/react-ts...
+    Scaffolding project in ~/Projects/github/node-tute/03-vite/react-ts...
     
     Done. Now run:
     
@@ -28,8 +28,10 @@ yarn create vite
       yarn
       yarn dev
     
-    ✨  Done in 12.06s.
+    ✨  Done in 33.21s.
+```
 
+```
 cd react-ts
 yarn install
 yarn dev
