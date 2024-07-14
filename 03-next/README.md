@@ -20,33 +20,45 @@ yarn global add create-next-app
 yarn create next-app --typescript
 
     ✔ What is your project named? … next-ts
-    ✔ Would you like to use ESLint with this project? … No / Yes
-    ✔ Would you like to use Tailwind CSS with this project? … No / Yes
-    ✔ Would you like to use `src/` directory with this project? … No / Yes
-    ✔ Would you like to use experimental `app/` directory with this project? … No / Yes
-    ✔ What import alias would you like configured? … @/*
+    ✔ Would you like to use ESLint? … No / Yes^
+    ✔ Would you like to use Tailwind CSS? … No / Yes^
+    ✔ Would you like to use `src/` directory? … No / Yes^
+    ✔ Would you like to use App Router? (recommended) … No / Yes^
+    ✔ Would you like to customize the default import alias (@/*)? … No^ / Yes
     Creating a new Next.js app in ~/Projects/github/node-tute/03-next/next-ts.
     
     Using yarn.
     
-    Initializing project with template: default
-        
+    Initializing project with template: app-tw
+    
+    
     Installing dependencies:
     - react
     - react-dom
     - next
+    
+    Installing devDependencies:
     - typescript
-    - @types/react
     - @types/node
+    - @types/react
     - @types/react-dom
+    - postcss
+    - tailwindcss
     - eslint
     - eslint-config-next
+```
 
+```
 cd next-ts
 yarn install
+yarn lint
 yarn dev
 yarn build
 yarn start
+```
+
+```
+open -a "Google Chrome" http://localhost:3000
 ```
 
 ```
