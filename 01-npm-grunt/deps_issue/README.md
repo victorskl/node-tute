@@ -1,5 +1,15 @@
 # Issue with NPM outdated packages as transitive dependencies
 
+## Update
+
+> Since NPM 8.3 the equivalent to yarn `resolutions` is called `overrides`.
+
+- https://stackoverflow.com/questions/52416312/npm-equivalent-of-yarn-resolutions
+- https://github.com/npm/rfcs/blob/main/accepted/0036-overrides.md
+- https://docs.npmjs.com/cli/v9/configuring-npm/package-json#overrides
+
+## Context
+
 NodeJS NPM outdated packages as transitive dependencies issue in regard to security vulnerabilities and implications...
 
 - GitHub security scan alerting [Alerts_victorskl_node-tute.pdf](Alerts_victorskl_node-tute.pdf). It is recommending to bump `diff >=3.5.0`. 
