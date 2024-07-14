@@ -13,10 +13,13 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "mocha": "^10.4.0",
+    "mocha": "^10.6.0",
     "supertest": "^7.0.0"
   },
   "directories": {
     "test": "test"
+  },
+  "overrides": {
+    "braces": "^3.0.3"
   }
 }
