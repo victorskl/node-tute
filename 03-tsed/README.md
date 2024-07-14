@@ -28,7 +28,7 @@ cd tsed-ts
 
 ```
 tsed init .
-? Choose the target platform: Express.js
+? Choose the target Framework: Express.js
 ? Choose the architecture for your project: Ts.ED
 ? Choose the convention file styling: Ts.ED
 ? Check the features needed for your project Database, Testing, Linter
@@ -37,7 +37,8 @@ tsed init .
 ? Choose unit framework Jest
 ? Choose linter tools framework EsLint
 ? Choose extra linter tools
-? Choose the package manager: Yarn
+? Choose the runtime: Node.js
+? Choose the package manager: Yarn Berry
 ↓ Write RC files [SKIPPED]
 ✔ Initialize package.json
 ✔ Install plugins

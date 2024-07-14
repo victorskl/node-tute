@@ -2,23 +2,25 @@ import {registerProvider} from "@tsed/di";
 import {DataSource} from "typeorm";
 import {Logger} from "@tsed/logger";
 
-export const SQLITE_DATA_SOURCE = Symbol.for("SqliteDataSource");
-export const SqliteDataSource = new DataSource({
+export const SqliteDatasource = Symbol.for("SqliteDatasource");
+export type SqliteDatasource = DataSource;
+export const sqliteDatasource = new DataSource({
   type: "sqlite",
   entities: [],
   database: "database.sqlite"
 });
 
+
 registerProvider<DataSource>({
-  provide: SQLITE_DATA_SOURCE,
+  provide: SqliteDatasource,
   type: "typeorm:datasource",
   deps: [Logger],
   async useAsyncFactory(logger: Logger) {
-    await SqliteDataSource.initialize();
+    await sqliteDatasource.initialize();
 
     logger.info("Connected with typeorm to database: Sqlite");
 
-    return SqliteDataSource;
+    return sqliteDatasource;
   },
   hooks: {
     $onDestroy(dataSource) {

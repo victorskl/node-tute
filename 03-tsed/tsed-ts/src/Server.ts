@@ -12,6 +12,9 @@ import * as rest from "./controllers/rest/index";
   httpPort: process.env.PORT || 8083,
   httpsPort: false, // CHANGE
   disableComponentsScan: true,
+  ajv: {
+    returnsCoercedValues: true
+  },
   mount: {
     "/rest": [
       ...Object.values(rest)

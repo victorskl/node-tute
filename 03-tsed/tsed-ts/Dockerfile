@@ -9,19 +9,21 @@
 ##                                                                           ##
 ## description     : Dockerfile for TsED Application                         ##
 ## author          : TsED team                                               ##
-## date            : 2022-03-05                                              ##
-## version         : 2.0                                                     ##
+## date            : 2023-12-11                                              ##
+## version         : 3.0                                                     ##
 ##                                                                           ##
 ###############################################################################
 ###############################################################################
-ARG NODE_VERSION=16.13.1
+
+ARG NODE_VERSION=20.10.0
 
 FROM node:${NODE_VERSION}-alpine as build
 WORKDIR /opt
 
-COPY package.json yarn.lock tsconfig.json tsconfig.compile.json .barrelsby.json ./
+COPY package.json yarn.lock yarn.lock tsconfig.json tsconfig.compile.json .barrelsby.json ./
 
-RUN yarn install --pure-lockfile
+RUN yarn set version berry
+RUN yarn install --immutable
 
 COPY ./src ./src
 
@@ -36,9 +38,11 @@ RUN npm install -g pm2
 
 COPY --from=build /opt .
 
-RUN yarn install --pure-lockfile --production
+RUN yarn set version berry
+RUN yarn install --immutable
+## RUN yarn workspaces focus --all --production
 
-COPY processes.config.js .
+COPY . .
 
 EXPOSE 8081
 ENV PORT 8081
