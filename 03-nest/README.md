@@ -25,8 +25,8 @@ nest
 nest new nest-ts --skip-git --skip-install --language TypeScript --package-manager yarn
 cd nest-ts
 yarn install
-yarn start
 yarn test
+yarn start
 ```
 
 ```
