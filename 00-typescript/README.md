@@ -18,8 +18,21 @@ npx tsc --help
 npx tsc --init
 npx tsc greeter.ts
 npx tsc
+```
 
+```
+npm run clean
+npm run build
+```
+
+```
 node primitive
+node tek
+```
+
+```
+open -a 'Google Chrome' class.html
+open -a 'Google Chrome' greeter.html
 ```
 
 - https://stackoverflow.com/questions/38030078/how-to-install-and-run-typescript-locally-in-npm/41446584
